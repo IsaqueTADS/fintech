@@ -8,7 +8,7 @@ import Resumo from "./pages/Resumo";
 const App = () => {
   return (
     <DataContextProvider>
-      <div>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
