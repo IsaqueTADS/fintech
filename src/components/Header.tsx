@@ -1,8 +1,12 @@
 import React from "react";
+import DateRange from "./DateRange";
 
 function Header() {
-
-  return <div>Header</div>;
+  return (
+    <div>
+      <DateRange />
+    </div>
+  );
 }
 
 export default Header;
