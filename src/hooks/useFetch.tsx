@@ -31,6 +31,7 @@ function useFetch<T>(
         });
         if (!response.ok) throw new Error(`Error: ${response.status}`);
         const data = (await response.json()) as T;
+        // console.log(data)
         if (!signal.aborted) setData(data);
       } catch (error) {
         if (!signal.aborted && error instanceof Error) setError(error.message);

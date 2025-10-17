@@ -49,7 +49,7 @@ body {
 }
 
 .mb {
-  margin-bottom: var(gap);
+  margin-bottom: var(--gap);
 }
 
 .bg-1 {
