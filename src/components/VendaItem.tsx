@@ -1,18 +1,19 @@
 import React from "react";
 import { IVenda } from "../context/DataContext";
 import { formatCurrency } from "../helpers/formatCurrency";
+import { NavLink } from "react-router-dom";
 
 const VendaItem = ({ venda }: { venda: IVenda }) => {
   return (
     <div className="venda box">
-      <a
-        href=""
+      <NavLink
+        to={`/vendas/${venda.id}`}
         style={{
           fontFamily: "monospace",
         }}
       >
         {venda.id}
-      </a>
+      </NavLink>
       <div>{venda.nome}</div>
       <div>{formatCurrency(venda.preco)}</div>
     </div>

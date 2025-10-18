@@ -86,7 +86,7 @@ body {
   width: 2rem;
   height: 2rem;
   background-color: var(--color-4);
-  display:  flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--gap);
@@ -96,9 +96,8 @@ body {
   flex: 1;
   font-size: 1.25rem;
   text-decoration: none;
-  color: var(--color-1) ;
+  color: var(--color-1);
   padding: var(--gap-s) 0;
-
 }
 
 .sidenav li:hover span {
@@ -112,8 +111,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
 }
-
-
 
 /* resumo */
 
@@ -145,4 +142,10 @@ body {
 .venda a {
   text-decoration: none;
   color: inherit;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

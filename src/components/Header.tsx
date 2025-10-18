@@ -1,7 +1,6 @@
 import React from "react";
 import DateRange from "./DateRange";
 import Meses from "./Meses";
-import { title } from "process";
 import { useLocation } from "react-router-dom";
 
 function Header() {
